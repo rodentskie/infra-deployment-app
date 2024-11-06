@@ -1,0 +1,9 @@
+.burger {
+  @mixin smaller-than $mantine-breakpoint-xs {
+    display: block;
+  }
+
+  @mixin larger-than $mantine-breakpoint-xs {
+    display: none;
+  }
+}

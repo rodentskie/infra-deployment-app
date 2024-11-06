@@ -12,6 +12,7 @@ import {
 import { Navlinks } from '@infra-deployment-app/navlinks';
 import { INavLinksProps } from '@infra-deployment-app/types';
 import { TabHeadNavigation } from '@infra-deployment-app/tab-navi';
+import { BurgerNav } from '@infra-deployment-app/burger-nav';
 
 export const metadata = {
   title: 'Infrastructure | DevOps',
@@ -45,7 +46,10 @@ export default function InfraLayout({
             <Navlinks {...links} />
           </Group>
 
-          <ModeSwitch />
+          <Group>
+            <ModeSwitch />
+            <BurgerNav />
+          </Group>
         </Group>
       </Container>
 
