@@ -8,7 +8,7 @@ export function TabHeadNavigation(props: ITabsProps) {
   const { defaultValue, tabs } = props;
   return (
     <Tabs defaultValue={defaultValue} variant={'unstyled'} classNames={classes}>
-      <Container>
+      <Container size={'lg'}>
         <Tabs.List>
           {tabs.length > 0 &&
             tabs.map((data) => {

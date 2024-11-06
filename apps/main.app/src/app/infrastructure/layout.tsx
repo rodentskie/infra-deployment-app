@@ -26,7 +26,7 @@ export default function InfraLayout({
 }) {
   return (
     <>
-      <Container p={12}>
+      <Container p={12} size={'lg'}>
         <Group justify="space-between">
           <Group gap={'xs'}>
             <Logo width={120} id="logo" style={{ marginRight: 24 }} />
