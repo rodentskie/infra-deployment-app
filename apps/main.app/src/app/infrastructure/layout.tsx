@@ -10,7 +10,7 @@ import {
   Stack,
 } from '@mantine/core';
 import { Navlinks } from '@infra-deployment-app/navlinks';
-import { INavLinksProps } from '@infra-deployment-app/types';
+import { links, infraTabs } from '@infra-deployment-app/constants';
 import { TabHeadNavigation } from '@infra-deployment-app/tab-navi';
 import { BurgerNav } from '@infra-deployment-app/burger-nav';
 
@@ -24,19 +24,6 @@ export default function InfraLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const links: INavLinksProps = {
-    links: [
-      {
-        label: 'Infrastructure',
-        link: '/infrastructure',
-      },
-      {
-        label: 'Releases',
-        link: '/releases',
-      },
-    ],
-  };
-
   return (
     <>
       <Container p={12}>
@@ -53,7 +40,7 @@ export default function InfraLayout({
         </Group>
       </Container>
 
-      <TabHeadNavigation />
+      <TabHeadNavigation {...infraTabs} />
       <Divider />
     </>
   );

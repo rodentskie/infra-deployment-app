@@ -18,6 +18,7 @@
       "@infra-deployment-app/burger-nav": [
         "library/next/burger-nav/src/index.ts"
       ],
+      "@infra-deployment-app/constants": ["library/js/constants/src/index.ts"],
       "@infra-deployment-app/logo": ["library/next/logo/src/index.ts"],
       "@infra-deployment-app/mode-switch": [
         "library/next/mode-switch/src/index.ts"

@@ -2,15 +2,22 @@
 
 import { Container, Flex, Group, Tabs } from '@mantine/core';
 import classes from './styles.module.css';
+import { ITabsProps } from '@infra-deployment-app/types';
 
-export function TabHeadNavigation() {
+export function TabHeadNavigation(props: ITabsProps) {
+  const { defaultValue, tabs } = props;
   return (
-    <Tabs defaultValue="first" variant={'unstyled'} classNames={classes}>
+    <Tabs defaultValue={defaultValue} variant={'unstyled'} classNames={classes}>
       <Container>
         <Tabs.List>
-          <Tabs.Tab value="first">First tab</Tabs.Tab>
-          <Tabs.Tab value="second">Second tab</Tabs.Tab>
-          <Tabs.Tab value="third">Third tab</Tabs.Tab>
+          {tabs.length > 0 &&
+            tabs.map((data) => {
+              return (
+                <Tabs.Tab value={data.value} id={data.value} key={data.value}>
+                  {data.label}
+                </Tabs.Tab>
+              );
+            })}
         </Tabs.List>
       </Container>
     </Tabs>
