@@ -1,0 +1,21 @@
+.root {
+  padding: 4px;
+}
+
+.link {
+  color: light-dark(var(--mantine-color-dark-8), var(--mantine-color-gray-2));
+  font-size: smaller;
+  cursor: pointer;
+}
+
+.crumbs {
+  @mixin larger-than $mantine-breakpoint-xs {
+    display: none;
+  }
+}
+
+.divider {
+  @mixin larger-than $mantine-breakpoint-xs {
+    display: none;
+  }
+}

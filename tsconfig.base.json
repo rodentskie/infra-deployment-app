@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@infra-deployment-app/breadcrumbs-nav": [
+        "library/next/breadcrumbs-nav/src/index.ts"
+      ],
       "@infra-deployment-app/burger-nav": [
         "library/next/burger-nav/src/index.ts"
       ],

@@ -5,7 +5,7 @@
 
   &[data-active] {
     z-index: 1;
-    color: var(--mantine-color-white);
+    color: light-dark(var(--mantine-color-dark-8), var(--mantine-color-gray-2));
     border-bottom: 1px solid var(--mantine-color-blue-4);
 
     @mixin hover {

@@ -13,6 +13,7 @@ import { Navlinks } from '@infra-deployment-app/navlinks';
 import { links, infraTabs } from '@infra-deployment-app/constants';
 import { TabHeadNavigation } from '@infra-deployment-app/tab-navi';
 import { BurgerNav } from '@infra-deployment-app/burger-nav';
+import { BreadcrumbsNav } from '@infra-deployment-app/breadcrumbs-nav';
 
 export const metadata = {
   title: 'Infrastructure | DevOps',
@@ -26,7 +27,7 @@ export default function InfraLayout({
 }) {
   return (
     <>
-      <Container p={12} size={'lg'}>
+      <Container p={12} size={'xl'}>
         <Group justify="space-between">
           <Group gap={'xs'}>
             <Logo width={120} id="logo" style={{ marginRight: 24 }} />
@@ -42,6 +43,8 @@ export default function InfraLayout({
 
       <TabHeadNavigation {...infraTabs} />
       <Divider />
+      <BreadcrumbsNav />
+      
     </>
   );
 }
