@@ -1,8 +1,13 @@
 .tab {
+  @mixin smaller-than $mantine-breakpoint-xs {
+    display: none;
+  }
+
   &[data-active] {
     z-index: 1;
     color: var(--mantine-color-white);
     border-bottom: 1px solid var(--mantine-color-blue-4);
+
     @mixin hover {
       border-bottom: 1px solid var(--mantine-color-blue-8);
     }
