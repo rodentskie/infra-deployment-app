@@ -1,7 +1,11 @@
 .link {
-  color: light-dark(var(--mantine-color-dark-8), var(--mantine-color-gray-2));
+  color: light-dark(var(--mantine-color-dark-4), var(--mantine-color-gray-5));
 
   @mixin smaller-than $mantine-breakpoint-xs {
     display: none;
+  }
+
+  @mixin hover {
+    color: light-dark(var(--mantine-color-dark-8), var(--mantine-color-gray-2));
   }
 }

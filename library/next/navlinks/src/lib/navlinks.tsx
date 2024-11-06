@@ -14,9 +14,10 @@ export function Navlinks(props: INavLinksProps) {
             <Anchor
               className={classes.link}
               href={data.link}
-              underline="hover"
+              underline="never"
               id={data.link}
               key={data.label}
+              mt={2}
             >
               {data.label}
             </Anchor>
