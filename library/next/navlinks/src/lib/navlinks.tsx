@@ -1,6 +1,8 @@
 import { Anchor } from '@mantine/core';
 import { INavLinksProps } from '@infra-deployment-app/types';
 
+import classes from './style.module.css';
+
 export function Navlinks(props: INavLinksProps) {
   const { links } = props;
 
@@ -10,6 +12,7 @@ export function Navlinks(props: INavLinksProps) {
         links.map((data) => {
           return (
             <Anchor
+              className={classes.link}
               href={data.link}
               underline="hover"
               id={data.link}

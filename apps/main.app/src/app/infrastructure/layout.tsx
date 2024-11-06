@@ -4,6 +4,11 @@ import { Anchor, Button, Container, Flex, Group, Stack } from '@mantine/core';
 import { Navlinks } from '@infra-deployment-app/navlinks';
 import { INavLinksProps } from '@infra-deployment-app/types';
 
+export const metadata = {
+  title: 'Infrastructure | DevOps',
+  description: 'Infrastructure and Release monitoring application.',
+};
+
 export default function InfraLayout({
   children,
 }: {
@@ -24,7 +29,7 @@ export default function InfraLayout({
 
   return (
     <>
-      <Container p={8}>
+      <Container p={12}>
         <Group justify="space-between">
           <Group gap={'xs'}>
             <Logo width={120} id="logo" style={{ marginRight: 24 }} />

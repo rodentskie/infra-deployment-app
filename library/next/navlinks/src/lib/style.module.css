@@ -1,0 +1,7 @@
+.link {
+  color: light-dark(var(--mantine-color-dark-8), var(--mantine-color-gray-2));
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    display: none;
+  }
+}
