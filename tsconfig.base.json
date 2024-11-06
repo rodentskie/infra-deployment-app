@@ -20,6 +20,7 @@
         "library/next/mode-switch/src/index.ts"
       ],
       "@infra-deployment-app/navlinks": ["library/next/navlinks/src/index.ts"],
+      "@infra-deployment-app/tab-navi": ["library/next/tab-navi/src/index.ts"],
       "@infra-deployment-app/types": ["library/js/types/src/index.ts"]
     }
   },

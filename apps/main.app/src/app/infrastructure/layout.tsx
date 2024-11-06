@@ -1,8 +1,17 @@
 import { ModeSwitch } from '@infra-deployment-app/mode-switch';
 import { Logo } from '@infra-deployment-app/logo';
-import { Anchor, Button, Container, Flex, Group, Stack } from '@mantine/core';
+import {
+  Anchor,
+  Button,
+  Container,
+  Divider,
+  Flex,
+  Group,
+  Stack,
+} from '@mantine/core';
 import { Navlinks } from '@infra-deployment-app/navlinks';
 import { INavLinksProps } from '@infra-deployment-app/types';
+import { TabHeadNavigation } from '@infra-deployment-app/tab-navi';
 
 export const metadata = {
   title: 'Infrastructure | DevOps',
@@ -39,6 +48,9 @@ export default function InfraLayout({
           <ModeSwitch />
         </Group>
       </Container>
+
+      <TabHeadNavigation />
+      <Divider />
     </>
   );
 }
