@@ -18,7 +18,9 @@
       "@infra-deployment-app/logo": ["library/next/logo/src/index.ts"],
       "@infra-deployment-app/mode-switch": [
         "library/next/mode-switch/src/index.ts"
-      ]
+      ],
+      "@infra-deployment-app/navlinks": ["library/next/navlinks/src/index.ts"],
+      "@infra-deployment-app/types": ["library/js/types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
