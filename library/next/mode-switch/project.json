@@ -1,0 +1,9 @@
+{
+  "name": "mode-switch",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "library/next/mode-switch/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project mode-switch --web",
+  "targets": {}
+}

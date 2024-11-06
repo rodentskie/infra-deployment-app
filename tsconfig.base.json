@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@infra-deployment-app/logo": ["library/next/logo/src/index.ts"],
+      "@infra-deployment-app/mode-switch": [
+        "library/next/mode-switch/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

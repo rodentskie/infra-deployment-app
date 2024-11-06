@@ -26,11 +26,6 @@ nx g @nx/next:app apps/`<name>`
 
 nx g @nx/next:lib library/next/`<name>`
 
-### Chakra UI snippets
-
-```
-npx @chakra-ui/cli snippet add --outdir snippets
-```
 
 ✨ **Create a JS library** ✨
 
