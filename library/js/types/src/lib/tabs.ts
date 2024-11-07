@@ -4,6 +4,5 @@ export interface ITabs {
 }
 
 export interface ITabsProps {
-  defaultValue: string;
   tabs: ITabs[];
 }

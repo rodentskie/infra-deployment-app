@@ -41,7 +41,7 @@ export default function InfraLayout({
         </Group>
       </Container>
 
-      <TabHeadNavigation {...infraTabs} />
+      {/* <TabHeadNavigation {...infraTabs} /> */}
       <Divider />
       <BreadcrumbsNav />
       {children}

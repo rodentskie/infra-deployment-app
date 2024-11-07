@@ -4,9 +4,16 @@ import { Container, Flex, Group } from '@mantine/core';
 import { Navlinks } from '@infra-deployment-app/navlinks';
 import { links } from '@infra-deployment-app/constants';
 import { BurgerNav } from '@infra-deployment-app/burger-nav';
-import { HeroHome } from '@infra-deployment-app/hero-home';
 
-export default function HomePage() {
+export const metadata = {
+  title: 'Infra | DevOps',
+};
+
+export default function InfraLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <Container p={12} size={'xl'}>
@@ -24,7 +31,7 @@ export default function HomePage() {
           </Group>
         </Group>
       </Container>
-      <HeroHome link={'/infra/live'} />
+      {children}
     </>
   );
 }

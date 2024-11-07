@@ -22,6 +22,9 @@
         "library/next/burger-nav/src/index.ts"
       ],
       "@infra-deployment-app/constants": ["library/js/constants/src/index.ts"],
+      "@infra-deployment-app/error-pages": [
+        "library/next/error-pages/src/index.ts"
+      ],
       "@infra-deployment-app/hero-home": [
         "library/next/hero-home/src/index.ts"
       ],

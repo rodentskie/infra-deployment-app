@@ -1,7 +1,6 @@
 import { ITabsProps } from '@infra-deployment-app/types';
 
 export const infraTabs: ITabsProps = {
-  defaultValue: 'live',
   tabs: [
     {
       value: 'live',
@@ -13,3 +12,6 @@ export const infraTabs: ITabsProps = {
     },
   ],
 };
+
+export const validInfraTypes = ['live', 'non-live'] as const;
+export type ValidInfraType = (typeof validInfraTypes)[number];

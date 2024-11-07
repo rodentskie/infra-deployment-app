@@ -6,8 +6,10 @@ import { ITabsProps } from '@infra-deployment-app/types';
 
 import classes from './styles.module.css';
 
-export function TabHeadNavigation(props: ITabsProps) {
-  const { defaultValue, tabs } = props;
+export function TabHeadNavigation(props: ITabsProps & { defaultValue: string }) {
+  const { tabs,defaultValue } = props;
+  
+
   return (
     <Tabs defaultValue={defaultValue} variant={'unstyled'} classNames={classes}>
       <Container size={'xl'}>

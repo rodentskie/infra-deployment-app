@@ -1,7 +1,7 @@
 export default function InfraPage() {
   return (
     <div>
-      <p>Infra Page</p>
+      {/* default infra page */}
     </div>
   );
 }

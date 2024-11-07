@@ -17,7 +17,7 @@ export function Navlinks(props: INavLinksProps) {
               underline="never"
               id={data.link}
               key={data.label}
-              mt={2}
+              mt={-2}
             >
               {data.label}
             </Anchor>

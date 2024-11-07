@@ -10,12 +10,19 @@ import {
   ThemeIcon,
   rem,
 } from '@mantine/core';
+import { useRouter } from 'next/navigation';
 import { IconCheck } from '@tabler/icons-react';
 import { HomeImage } from '@infra-deployment-app/svg';
 
 import classes from './styles.module.css';
 
-export function HeroHome() {
+export function HeroHome({ link }: { link: string }) {
+  const router = useRouter();
+
+  function onStartClick() {
+    router.push(link);
+  }
+
   return (
     <Container size="md">
       <div className={classes.inner}>
@@ -56,7 +63,7 @@ export function HeroHome() {
           </List>
 
           <Group mt={30} justify="flex-end">
-            <Button radius="xl" size="md" className={classes.control}>
+            <Button radius="xl" size="md" className={classes.control} onClick={onStartClick}>
               Get started
             </Button>
           </Group>
