@@ -1,0 +1,10 @@
+.side {
+  position: sticky;
+  flex-shrink: 0;
+  height: calc(100vh - 96px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  width: 16rem;
+  font-size: 0.875rem;
+  scrollbar-width: thin;
+}
