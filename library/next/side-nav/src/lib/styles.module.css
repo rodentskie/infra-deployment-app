@@ -2,9 +2,12 @@
   position: sticky;
   flex-shrink: 0;
   height: calc(100vh - 96px);
-  overflow-y: auto;
-  overscroll-behavior: contain;
   width: 16rem;
+  padding: 1rem;
   font-size: 0.875rem;
-  scrollbar-width: thin;
+
+  @mixin smaller-than $mantine-breakpoint-xs {
+    display: none;
+  }
 }
+

@@ -1,2 +1,3 @@
 export * from './lib/navlinks';
 export * from './lib/tabs';
+export * from './lib/sidelinks';
