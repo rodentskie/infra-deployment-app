@@ -22,12 +22,16 @@
         "library/next/burger-nav/src/index.ts"
       ],
       "@infra-deployment-app/constants": ["library/js/constants/src/index.ts"],
+      "@infra-deployment-app/hero-home": [
+        "library/next/hero-home/src/index.ts"
+      ],
       "@infra-deployment-app/logo": ["library/next/logo/src/index.ts"],
       "@infra-deployment-app/mode-switch": [
         "library/next/mode-switch/src/index.ts"
       ],
       "@infra-deployment-app/navlinks": ["library/next/navlinks/src/index.ts"],
       "@infra-deployment-app/side-nav": ["library/next/side-nav/src/index.ts"],
+      "@infra-deployment-app/svg": ["library/next/svg/src/index.ts"],
       "@infra-deployment-app/tab-navi": ["library/next/tab-navi/src/index.ts"],
       "@infra-deployment-app/types": ["library/js/types/src/index.ts"]
     }
