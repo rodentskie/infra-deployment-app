@@ -1,8 +1,10 @@
 'use client';
 
 import { Container, Flex, Group, Tabs } from '@mantine/core';
-import classes from './styles.module.css';
+
 import { ITabsProps } from '@infra-deployment-app/types';
+
+import classes from './styles.module.css';
 
 export function TabHeadNavigation(props: ITabsProps) {
   const { defaultValue, tabs } = props;
