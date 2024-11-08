@@ -1,4 +1,5 @@
 export interface ISideLinks {
+  key: string;
   value: string;
   label: string;
 }

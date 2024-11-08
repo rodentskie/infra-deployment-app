@@ -1,14 +1,9 @@
-import {
-  Container,
-  Divider,
-  NavLink,
-  rem,
-  ScrollArea,
-  Title,
-} from '@mantine/core';
+import { Container, rem, ScrollArea, Title } from '@mantine/core';
+
 import { ISideLinkProps } from '@infra-deployment-app/types';
 
 import classes from './styles.module.css';
+import NavigationLink from './components/nav-link';
 
 export function SideNav({ props }: { props: ISideLinkProps[] }) {
   return (
@@ -26,12 +21,12 @@ export function SideNav({ props }: { props: ISideLinkProps[] }) {
                   {data.subTopics.length > 0 &&
                     data.subTopics.map((e, i) => {
                       return (
-                        <NavLink
+                        <NavigationLink
                           key={`nav-${i}`}
-                          href={e.value}
+                          id={e.key}
+                          link={e.value}
                           label={e.label}
-                          px={0}
-                          ml={8}
+                          topic={data.topic}
                         />
                       );
                     })}
