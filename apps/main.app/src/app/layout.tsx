@@ -4,7 +4,7 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { theme } from '../../theme';
 
 export const metadata = {
-  title: 'DevOps',
+  title: 'Home | DevOps',
   description: 'Infrastructure and Release monitoring application.',
 };
 

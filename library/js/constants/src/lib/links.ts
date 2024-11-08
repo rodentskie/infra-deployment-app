@@ -4,7 +4,7 @@ export const links: INavLinksProps = {
   links: [
     {
       label: 'Infrastructure',
-      link: '/infrastructure',
+      link: '/infra/live',
     },
     {
       label: 'Releases',
