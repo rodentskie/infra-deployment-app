@@ -24,7 +24,7 @@ export default function HomePage() {
           </Group>
         </Group>
       </Container>
-      <HeroHome link={'/infra/live'} />
+      <HeroHome link={'/infrastructure/live'} />
     </>
   );
 }
