@@ -25,7 +25,7 @@ export default function InfraPage(prop: ISlugs) {
         defaultValue={slug[0]}
         currentPath={'/infra'}
       />
-      
+
       {slug[0] === 'live' ? (
         <SideNav props={infraLiveSideLinks} />
       ) : (

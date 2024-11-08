@@ -20,7 +20,7 @@ export default function NavigationLink({ id, link, label, topic }: IProps) {
         key={id}
         href={link}
         label={label}
-        px={0}
+        px={4}
         active={active}
       />
     </>

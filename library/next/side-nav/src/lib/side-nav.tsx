@@ -22,6 +22,7 @@ export function SideNav({ props }: { props: ISideLinkProps[] }) {
                     data.subTopics.map((e, i) => {
                       return (
                         <NavigationLink
+                          key={`nav-${i}`}
                           id={e.key}
                           link={e.value}
                           label={e.label}
