@@ -1,6 +1,10 @@
 import { notFound } from 'next/navigation';
 
-import { infraTabs,ValidInfraType,validInfraTypes } from '@infra-deployment-app/constants';
+import {
+  infraTabs,
+  ValidInfraType,
+  validInfraTypes,
+} from '@infra-deployment-app/constants';
 import { TabHeadNavigation } from '@infra-deployment-app/tab-navi';
 import { ISlugs } from '@infra-deployment-app/types';
 
@@ -13,7 +17,11 @@ export default function InfraPage(prop: ISlugs) {
 
   return (
     <div>
-      <TabHeadNavigation {...infraTabs} defaultValue={slug[0]} />
+      <TabHeadNavigation
+        {...infraTabs}
+        defaultValue={slug[0]}
+        currentPath={'/infra'}
+      />
     </div>
   );
 }
